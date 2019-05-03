@@ -1,6 +1,7 @@
 class Board < ApplicationRecord
 
-  # # model association
+  # model association
+  has_many :lists, dependent: :destroy
   # belongs_to :user
 
   # validations
